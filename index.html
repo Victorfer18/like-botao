@@ -11,27 +11,20 @@
 
 <body>
     <div class="container">
-        <img class="like like-js" src="./img/icon/like.png">
+        <button class="like-js" onclick="like()"><img class="like" src="./img/icon/like.png" ></button>
+        <h2 class="numero">0</h2>
+        <button class="like-js" onclick="like()"><img class="like" src="./img/icon/like.png" ></button>
+        <h2 class="numero">0</h2>
     </div>
-    <style>
-        * {
-            box-sizing: border-box;
-            outline: none;
+    <script>
+        function like(l){
+            let $cont = document.querySelector('.numero')
+            $cont.innerHTML
+            let $salv = parseInt($cont.innerHTML)
+            $cont.innerHTML = $salv + 1
         }
-
-        body {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            background-color: darkolivegreen;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+        
+    </script>
 </body>
 
 </html>
